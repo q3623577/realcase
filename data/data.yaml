@@ -1,0 +1,12 @@
+test_register:
+  mobile: 18727309763
+
+login_user:
+  # 手机号，密码
+  - [ 18727309763,123456 ]
+#
+#shopping_car:
+#  goods: 6
+#  num: 1
+
+shopping_car: { goods: 6, nums: 1 }
