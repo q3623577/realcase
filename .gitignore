@@ -1,0 +1,15 @@
+#忽略log结尾的文件
+*.log
+
+#忽略文件下的内容
+/testcases/goods_center/report/
+/testcases/usercenter/report/
+/venv/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
