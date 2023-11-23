@@ -1,0 +1,22 @@
+user_login_new:
+  #接口的基本信息
+  - request_info:
+      case_title: 登录接口
+      url: /login/
+      method: POST
+      headers:
+        Content-Type: application/json
+    case_info:
+      #接口清酒参数，params，json，data
+      - json:
+          username: 18727309763
+          password: 123456
+        validate:
+          - contains: [$.token,'eyJ0eX']
+
+      - json:
+          username: 15000000456
+          password: 123456
+        validate:
+          - eq: [ '$.non_field_errors[0]', '无法使用提供的认证信息登录。' ]
+      #        - contains: [$.token, 'eyJ0eX1']
