@@ -1,0 +1,60 @@
+[2023-11-15 16:01:41,616][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:01:41,616][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:01:41,616][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000000
+}
+[2023-11-15 16:01:41,721][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:02:33,875][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:02:33,875][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:02:33,876][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000000
+}
+[2023-11-15 16:02:33,950][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:02:51,579][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:02:51,579][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:02:51,579][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:02:51,661][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:10:20,261][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:10:20,261][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:10:20,261][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:10:20,381][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:13:57,293][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:13:57,294][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:13:57,294][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:13:57,377][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:16:24,904][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:16:24,904][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:16:24,905][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:19:19,091][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:19:19,092][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:19:19,092][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:19:19,169][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 16:19:49,661][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-15 16:19:49,661][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-15 16:19:49,661][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 15000000012
+}
+[2023-11-15 16:19:49,753][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-15 16:19:49,753][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": ["用户已经存在"]}
+[2023-11-15 17:19:21,978][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = '15000000000' order by id desc limit 1;
+[2023-11-15 17:19:22,007][mysql_util.py 34][INFO]: 单条查询的结果为：None
+[2023-11-15 21:03:45,770][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = '13703490110' order by id desc limit 1;
+[2023-11-15 21:03:45,802][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '8735'}

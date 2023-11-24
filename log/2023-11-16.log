@@ -1,0 +1,532 @@
+[2023-11-16 15:34:34,238][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = '13703490110' order by id desc ;
+[2023-11-16 15:34:34,275][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '8735'}
+[2023-11-16 15:44:40,631][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 13703490110 order by id desc ;
+[2023-11-16 15:44:40,666][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '8735'}
+[2023-11-16 15:44:40,666][conftest.py 9][INFO]: 13703490110获取到的验证码为：{'code': '8735'}
+[2023-11-16 15:55:52,057][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 15:55:52,057][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 15:55:52,057][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 17784410498
+}
+[2023-11-16 15:55:52,448][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": "17784410498"}
+[2023-11-16 15:55:52,448][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 17784410498 order by id desc ;
+[2023-11-16 15:55:52,477][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '9331'}
+[2023-11-16 15:55:52,477][conftest.py 9][INFO]: 手机号 17784410498 获取到的验证码为：9331
+[2023-11-16 15:55:52,477][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 15:55:52,477][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 15:55:52,478][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "code": "{'code': '9331'}",
+  "password": "123456",
+  "mobile": "17784410498"
+}
+[2023-11-16 15:55:52,516][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 15:55:52,516][response_util.py 18][INFO]: 接口返回的内容为>>>：{"username": ["该字段是必填项。"], "code": ["验证码格式错误"]}
+[2023-11-16 16:01:11,676][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:01:11,676][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:01:11,676][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 17784410498
+}
+[2023-11-16 16:01:11,761][response_util.py 18][INFO]: 接口返回的内容为>>>：{"mobile": "17784410498"}
+[2023-11-16 16:01:11,761][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 17784410498 order by id desc ;
+[2023-11-16 16:01:11,793][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '0098'}
+[2023-11-16 16:01:11,793][conftest.py 9][INFO]: 手机号 17784410498 获取到的验证码为：0098
+[2023-11-16 16:01:11,793][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:01:11,793][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:01:11,793][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "17784410498",
+  "code": "0098",
+  "password": "123456",
+  "mobile": "17784410498"
+}
+[2023-11-16 16:01:11,916][response_util.py 18][INFO]: 接口返回的内容为>>>：{"username": "17784410498", "mobile": "17784410498", "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTIsInVzZXJuYW1lIjoiMTc3ODQ0MTA0OTgiLCJleHAiOjE3MDA3MjY0NzEsImVtYWlsIjpudWxsfQ.u9xvCqvaJ1DTH3Y8TXsCbPpEursX12nxQ_H06IHL0Rg", "name": "17784410498"}
+[2023-11-16 16:09:33,096][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:09:33,097][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:09:33,097][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 17784410498
+}
+[2023-11-16 16:09:33,239][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 16:09:33,239][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": [
+    "用户已经存在"
+  ]
+}
+[2023-11-16 16:24:18,053][mysql_util.py 47][INFO]: 执行sqldelete from users_verifycode where mobile = 18727309763;
+[2023-11-16 16:24:18,112][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 16:24:18,112][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:24:18,112][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:24:18,112][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 16:24:18,209][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": "18727309763"
+}
+[2023-11-16 16:24:18,209][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 18727309763 order by id desc ;
+[2023-11-16 16:24:18,238][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '1265'}
+[2023-11-16 16:24:18,238][conftest.py 9][INFO]: 手机号 18727309763 获取到的验证码为：1265
+[2023-11-16 16:24:18,239][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:24:18,239][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:24:18,239][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "18727309763",
+  "code": "1265",
+  "password": "123456",
+  "mobile": "18727309763"
+}
+[2023-11-16 16:24:18,396][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "username": "18727309763",
+  "mobile": "18727309763",
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTMsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3Mjc4NTgsImVtYWlsIjpudWxsfQ.Kix0-8UTSvj_X9X931XuzrcMhBWW4B8LjAbB9rUeZlM",
+  "name": "18727309763"
+}
+[2023-11-16 16:24:18,396][mysql_util.py 47][INFO]: 执行sqldelete from users_userprofile where mobile = 18727309763;
+[2023-11-16 16:24:18,467][conftest.py 15][INFO]: 删除用户的结果为：None
+[2023-11-16 16:25:25,188][mysql_util.py 47][INFO]: 执行sqldelete from users_verifycode where mobile = 18727309763;
+[2023-11-16 16:25:25,247][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 16:25:25,247][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:25:25,247][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:25:25,248][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 16:25:25,346][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": "18727309763"
+}
+[2023-11-16 16:25:25,346][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 18727309763 order by id desc ;
+[2023-11-16 16:25:25,377][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '9572'}
+[2023-11-16 16:25:25,377][conftest.py 9][INFO]: 手机号 18727309763 获取到的验证码为：9572
+[2023-11-16 16:25:25,377][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:25:25,377][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:25:25,377][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "18727309763",
+  "code": "9572",
+  "password": "123456",
+  "mobile": "18727309763"
+}
+[2023-11-16 16:25:25,494][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "username": "18727309763",
+  "mobile": "18727309763",
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTQsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3Mjc5MjUsImVtYWlsIjpudWxsfQ.uA-LarvqSnZjLEuKH-T0JvGe7ugiXiokx2tR9yxNAdc",
+  "name": "18727309763"
+}
+[2023-11-16 16:25:25,494][mysql_util.py 47][INFO]: 执行sqldelete from users_userprofile where mobile = 18727309763;
+[2023-11-16 16:25:25,565][conftest.py 15][INFO]: 删除用户的结果为：None
+[2023-11-16 16:44:57,790][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 16:44:57,790][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:44:57,790][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 16:44:57,883][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 16:44:57,883][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "non_field_errors": [
+    "无法使用提供的认证信息登录。"
+  ]
+}
+[2023-11-16 16:45:14,185][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 16:45:14,245][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 16:45:14,246][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:45:14,246][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:45:14,246][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 16:45:14,324][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": "18727309763"
+}
+[2023-11-16 16:45:14,324][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 18727309763 order by id desc ;
+[2023-11-16 16:45:14,353][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '6904'}
+[2023-11-16 16:45:14,353][conftest.py 9][INFO]: 手机号 18727309763 获取到的验证码为：6904
+[2023-11-16 16:45:14,353][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:45:14,353][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:45:14,353][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "18727309763",
+  "code": "6904",
+  "password": "123456",
+  "mobile": "18727309763"
+}
+[2023-11-16 16:45:14,468][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "username": "18727309763",
+  "mobile": "18727309763",
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTUsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MjkxMTQsImVtYWlsIjpudWxsfQ.lmXb6aaAAfndGjOl0PRvgTnYubV1M0ivSJUw-pYybi0",
+  "name": "18727309763"
+}
+[2023-11-16 16:45:14,468][mysql_util.py 47][INFO]: 执行的sql为：delete from users_userprofile where mobile = 18727309763;
+[2023-11-16 16:45:14,543][conftest.py 15][INFO]: 删除用户的结果为：None
+[2023-11-16 16:45:14,545][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 16:45:14,545][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:45:14,545][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 16:45:14,593][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 16:45:14,593][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "non_field_errors": [
+    "无法使用提供的认证信息登录。"
+  ]
+}
+[2023-11-16 16:46:24,193][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 16:46:24,256][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 16:46:24,257][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:46:24,257][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:46:24,257][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 16:46:24,360][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": "18727309763"
+}
+[2023-11-16 16:46:24,360][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 18727309763 order by id desc ;
+[2023-11-16 16:46:24,390][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '9791'}
+[2023-11-16 16:46:24,390][conftest.py 9][INFO]: 手机号 18727309763 获取到的验证码为：9791
+[2023-11-16 16:46:24,390][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:46:24,390][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:46:24,390][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "18727309763",
+  "code": "9791",
+  "password": "123456",
+  "mobile": "18727309763"
+}
+[2023-11-16 16:46:24,508][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "username": "18727309763",
+  "mobile": "18727309763",
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTYsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MjkxODQsImVtYWlsIjpudWxsfQ.hj26zxQs3RlNJjVJt1O_hbaB8_a0f4SrxWzbkzkQHfs",
+  "name": "18727309763"
+}
+[2023-11-16 16:46:24,508][mysql_util.py 47][INFO]: 执行的sql为：delete from users_userprofile where mobile = 18727309763;
+[2023-11-16 16:46:24,578][conftest.py 15][INFO]: 删除用户的结果为：None
+[2023-11-16 16:46:24,581][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 16:46:24,581][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:46:24,581][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 16:46:24,630][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 16:46:24,630][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "non_field_errors": [
+    "无法使用提供的认证信息登录。"
+  ]
+}
+[2023-11-16 16:47:20,890][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 16:47:20,951][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 16:47:20,952][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 16:47:20,952][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:47:20,952][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 16:47:21,031][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": "18727309763"
+}
+[2023-11-16 16:47:21,031][mysql_util.py 30][INFO]: 执行的查询语句为：select code from users_verifycode where mobile = 18727309763 order by id desc ;
+[2023-11-16 16:47:21,060][mysql_util.py 34][INFO]: 单条查询的结果为：{'code': '8573'}
+[2023-11-16 16:47:21,060][conftest.py 9][INFO]: 手机号 18727309763 获取到的验证码为：8573
+[2023-11-16 16:47:21,060][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/users/
+[2023-11-16 16:47:21,060][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:47:21,060][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": "18727309763",
+  "code": "8573",
+  "password": "123456",
+  "mobile": "18727309763"
+}
+[2023-11-16 16:47:21,172][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "username": "18727309763",
+  "mobile": "18727309763",
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTcsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MjkyNDAsImVtYWlsIjpudWxsfQ.Ga6bfKj_-KB4XOgNNNKk-v8n0SFnSKpj8k_blhYjMX4",
+  "name": "18727309763"
+}
+[2023-11-16 16:47:21,175][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 16:47:21,175][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 16:47:21,175][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 16:47:21,289][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTcsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MjkyNDEsImVtYWlsIjpudWxsfQ.yQNDI20ADjtZImktbnRNUMY0JoQ-BncNULk6Q7WN4gc"
+}
+[2023-11-16 17:06:07,485][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/banners/
+[2023-11-16 17:06:07,486][rest_client.py 50][INFO]: 接口请求的方法>>>GET
+[2023-11-16 17:06:07,563][response_util.py 19][INFO]: 接口返回的内容为>>>：[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-11-16 17:07:47,579][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/banners/
+[2023-11-16 17:07:47,579][rest_client.py 50][INFO]: 接口请求的方法>>>GET
+[2023-11-16 17:07:47,668][response_util.py 19][INFO]: 接口返回的内容为>>>：[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-11-16 17:11:34,983][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 17:11:35,043][conftest.py 21][INFO]: 重置验证码结果为：None
+[2023-11-16 17:11:35,043][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 17:11:35,043][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:11:35,043][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 17:11:35,124][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 17:11:35,124][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": [
+    "用户已经存在"
+  ]
+}
+[2023-11-16 17:11:35,164][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 17:11:35,164][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:11:35,164][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 17:11:35,277][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTcsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MzA2OTUsImVtYWlsIjpudWxsfQ.H4y8PkQw1j4T-8RhZiT47Qobs0kLRY--IXmsW5UPjn4"
+}
+[2023-11-16 17:13:34,935][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 17:13:34,992][conftest.py 21][INFO]: 重置验证码结果为：success
+[2023-11-16 17:13:34,992][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 17:13:34,992][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:13:34,992][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 17:13:35,070][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 17:13:35,070][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": [
+    "用户已经存在"
+  ]
+}
+[2023-11-16 17:13:35,111][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 17:13:35,111][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:13:35,111][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 17:13:35,223][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTcsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MzA4MTUsImVtYWlsIjpudWxsfQ.thc-de4_OuF-DxEYKdypmgj1-7cboBf5iBoSgGyIcqg"
+}
+[2023-11-16 17:13:37,611][mysql_util.py 47][INFO]: 执行的sql为：delete from users_verifycode where mobile = 18727309763;
+[2023-11-16 17:13:37,677][conftest.py 21][INFO]: 重置验证码结果为：success
+[2023-11-16 17:13:37,678][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/code/
+[2023-11-16 17:13:37,678][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:13:37,678][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "mobile": 18727309763
+}
+[2023-11-16 17:13:37,758][response_util.py 14][INFO]: 接口状态码返回不是2开头，请检查传参
+[2023-11-16 17:13:37,758][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "mobile": [
+    "用户已经存在"
+  ]
+}
+[2023-11-16 17:13:37,796][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/login/
+[2023-11-16 17:13:37,797][rest_client.py 50][INFO]: 接口请求的方法>>>POST
+[2023-11-16 17:13:37,797][rest_client.py 56][INFO]: 接口请求的json参数>>>
+{
+  "username": 18727309763,
+  "password": 123456
+}
+[2023-11-16 17:13:37,913][response_util.py 19][INFO]: 接口返回的内容为>>>：{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMjk3NTcsInVzZXJuYW1lIjoiMTg3MjczMDk3NjMiLCJleHAiOjE3MDA3MzA4MTcsImVtYWlsIjpudWxsfQ.-0kyjxJ6oIb2CpM5aa8-J9EzUzFk4lquT8QCmP60PaA"
+}
+[2023-11-16 17:15:21,265][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/banners/
+[2023-11-16 17:15:21,265][rest_client.py 50][INFO]: 接口请求的方法>>>GET
+[2023-11-16 17:15:21,350][response_util.py 19][INFO]: 接口返回的内容为>>>：[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-11-16 17:15:21,350][mysql_util.py 30][INFO]: 执行的查询语句为：select count(1) as banner_num from goods_banner;
+[2023-11-16 17:15:21,378][mysql_util.py 34][INFO]: 单条查询的结果为：{'banner_num': 5}
+[2023-11-16 17:16:21,995][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/banners/
+[2023-11-16 17:16:21,995][rest_client.py 50][INFO]: 接口请求的方法>>>GET
+[2023-11-16 17:16:22,068][response_util.py 19][INFO]: 接口返回的内容为>>>：[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-11-16 17:16:22,068][mysql_util.py 30][INFO]: 执行的查询语句为：select count(1) as banner_num from goods_banner;
+[2023-11-16 17:16:22,097][mysql_util.py 34][INFO]: 单条查询的结果为：{'banner_num': 5}
+[2023-11-16 17:17:00,458][rest_client.py 49][INFO]: 接口请求的地址>>>http://admin.5istudy.online/banners/
+[2023-11-16 17:17:00,458][rest_client.py 50][INFO]: 接口请求的方法>>>GET
+[2023-11-16 17:17:00,534][response_util.py 19][INFO]: 接口返回的内容为>>>：[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-11-16 17:17:00,534][mysql_util.py 30][INFO]: 执行的查询语句为：select count(1) as banner_num from goods_banner;
+[2023-11-16 17:17:00,566][mysql_util.py 34][INFO]: 单条查询的结果为：{'banner_num': 5}

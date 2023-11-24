@@ -1,5 +1,5 @@
 #忽略log结尾的文件
-*.log
+#*.log
 
 #忽略文件下的内容
 /testcases/goods_center/report/
